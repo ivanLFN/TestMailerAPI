@@ -71,7 +71,7 @@ class ClientSerializerTestCase(APITestCase):
 # url = 'http://127.0.0.1:8000/clients/'
 
 # data = {
-#     "phone_number": "7914444444",
+#     "phone_number": "90000000000",
 #     "operator_code": "913",
 #     "tag": "new_client",
 #     "timezone": "GMT+3"

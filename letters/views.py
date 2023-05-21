@@ -51,11 +51,9 @@ def activate_mailing(request):
     statistics = mailing.get_message_statistics()
     print(statistics)
 
-    # Получение клиента и рассылки
     # client = Client.objects.get(id=3)
     # mailing = Mailing.objects.get(id=2)
 
-    # Отправка сообщения
     # message = mailer.send_message(client, mailing)
     # print(message)
 
@@ -63,11 +61,10 @@ def activate_mailing(request):
     #     success_message = "Сообщение успешно отправлено"
     # else:
     #     success_message = "Ошибка отправки сообщения"
-    success_message = "INTERGUIDE"
 
-    return HttpResponse(success_message)
+    return Response(statistics)
 
-    # Дальнейшая обработка и отображение результата
+
 
 
 

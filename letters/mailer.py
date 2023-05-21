@@ -45,12 +45,10 @@ class Mailer:
                 
             else:
                 # Обработка ошибки запроса
-                # print(f"Ошибка запроса: {response.status_code}, {response_data}")
                 print('400')
         except ConnectionError as e:
             # Обработка ошибки соединения
             print(f"Ошибка соединения: {str(e)}")
-            # Выполнение дополнительных действий при ошибке соединения
 
 
 
