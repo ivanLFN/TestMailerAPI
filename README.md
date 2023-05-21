@@ -28,10 +28,31 @@ pip install -r requirements.txt
 1. Запустите сервер Django:
 python manage.py runserver
 
-2. Проект будет доступен по адресу 
+2. Запустите файл планировщика задач из корневой деректории:
+python scheduler.py
+
+3. Проект будет доступен по адресу 
 [http://localhost:8000/](http://localhost:8000/)
 
 
 ## Использование API
 
-###Работа с клиентами:
+Работа с клиентами:
+
+1. Получение списка клиентов:
+http://localhost:8000/clients/
+
+Пример запроса на python:
+
+`import requests
+
+url = 'http://localhost:8000/clients/'
+data = {
+    'phone_number': '1234567890',
+    'operator_code': 'ABC',
+    'tag': 'New Client',
+    'timezone': 'UTC'
+}
+
+response = requests.post(url, data=data)`
+
