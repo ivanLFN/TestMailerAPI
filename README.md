@@ -35,6 +35,3 @@ python manage.py runserver
 ## Использование API
 
 ###Работа с клиентами:
-
-
-
